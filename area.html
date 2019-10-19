@@ -1,0 +1,29 @@
+<!--  Q1.  The output of the JavaScript code displays 10.  
+		   This happens due to the variable i in the for
+		   loop being incremented for every time it is less than 10.  
+		   Then console.log(i) displays the variable in the console. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Area & Volume of Box</title>
+	<script>
+		var getSize = function(width, height, depth) {
+			var width = prompt("Please enter the width");
+			var height = prompt("Please enter the height");
+			var depth = prompt("Please enter the depth");
+
+			var boxArea = 2 * (height * width) + 2 * (height * depth) + 2 * (width * depth);
+			var volume = height * width * depth;
+
+			var sizes = [boxArea, volume];
+
+			document.write(sizes);
+		}
+
+		getSize()
+	</script>
+</head>
+
+</html>
